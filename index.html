@@ -16,32 +16,36 @@
     <h1>Login</h1>
     <h1>Cadrastro</h1>
     <img src="pasta/Historia-da-Tecnologia.png" alt=""  width="300px" height="200px">
-     <header>
-
-     </header> Nome <header>
-
-     </header>
-     <input type="nome">
-     <header>
-
-     </header> Email <header>
-
-     </header>
-     <input type="email">
+    <h3> Login</h3>
    <header>
 
    </header>
-    Data de Nascimento 
-    <header>
+   <input type="text" placeholder="login" id="login">
+   <header>
 
-    </header>
-    <input type="date">
-    <header>
- Senha <header>
+   </header>
+   <input type="password" name="Senha" id="senha">
+  <header>
 
-     </header>
-     <input type="password">
-    </header>
-    <input type="submit">
+  </header>
+   <input type="submit" onclick="logar(); return false">
+   <script>
+    function logar(){
+       var login = document.getElementById('login').value;
+     var senha = document.getElementById('senha').value;
+    
+    if(login == "admin" && senha == "admin"){
+        alert('Sucesso');
+        location.href = "home.html";
+    }else{
+        alert('usuario ou senha incorretos');
+    }
+
+
+
+
+
+    }
+   </script>
 </body>
 </html>
